@@ -1,0 +1,5 @@
+ProjectTitle: Layman Politics
+
+PageList:
+- file: page.html
+  ready: 50

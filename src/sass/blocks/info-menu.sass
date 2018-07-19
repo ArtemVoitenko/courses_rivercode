@@ -1,0 +1,33 @@
+.info-menu
+	margin: 0
+	padding: 0
+	margin-top: -10px
+	&__item
+		display: inline-block
+		margin-right: 10px
+		border: 1px solid transparent
+		border-radius: 4px
+		padding: 5px
+		&:hover
+			background-color: #113344
+			border-left: 1px solid #07252F
+			border-bottom: 1 px solid #426471
+			border-top: 1px solid #07252F
+			border-right: 1 px solid #426471
+	&__link
+		text-transform: uppercase
+		font-family: "BarlowCondensed"
+		font-size: 14px
+
+		color: #A6A6A6
+		text-decoration: none
+		line-height: 22px
+		&:last-child
+			margin-right: 0
+@media (max-width: 768px)
+	.info-menu
+		&__item
+			display: block
+			width: 100%
+			text-align: center
+			padding: 0

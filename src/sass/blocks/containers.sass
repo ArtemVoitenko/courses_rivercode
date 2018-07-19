@@ -1,0 +1,57 @@
+body
+	background-image: url(../img/bg.jpg)
+	padding-bottom: 170px
+	&:before
+		content: ""
+		height: 600px
+		width: 100%
+		background: url(../img/clouds2.png)
+		background-position: center
+		position: absolute
+		top: 150px
+		z-index: -1
+	font-family: $default-font
+.container
+  width: 100%
+  min-width: 320px
+  max-width: 1000px
+  margin: 0 auto
+  z-index: -500000
+.main-content
+	background-color: #EDEDED
+	padding: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+.responsive-img
+	width: 100%
+	height: auto
+.gradient
+	width: 100%
+	z-index: -2
+	height: 240px
+	position: absolute
+	top: 0
+	background: linear-gradient(to bottom, rgb(41, 40, 38) 0%, rgb(35, 52, 106) 20%, rgb(42, 90, 172) 40%, rgb(62, 138, 214) 60%, rgb(156, 209, 240) 80%, rgb(200, 216, 229) 99%, rgb(199, 215, 228) 100%)
+.logo-bottom
+	display: inline-block
+	margin-top: 280px
+@media (max-width: 960px)
+	.main-content
+		-webkit-flex-direction: column
+		-moz-flex-direction: column
+		-ms-flex-direction: column
+		-o-flex-direction: column
+		flex-direction: column
+@media (max-width: 768px)
+	.main-content
+		padding: 30px 0
+	.logo-bottom
+		display: block
+		text-align: center
+		margin-top: 30px
+	body
+		padding-bottom: 50px

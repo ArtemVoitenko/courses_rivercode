@@ -1,0 +1,40 @@
+.main-nav
+	margin-left: 40px
+	&__list
+			margin: 0
+			padding: 0
+	&__item
+		display: inline-block
+		padding: 5px
+		margin-right: 15px
+		border: 1px solid transparent
+		border-radius: 4px
+		&:hover
+			background-color: #092F3B
+			border-left: 1px solid #07252F
+			border-bottom: 1px solid #426471
+			border-top: 1px solid #07252F
+			border-right: 1px solid #426471
+			
+	&__link
+		text-transform: uppercase
+		font-family: "BarlowCondensed"
+		font-size: 18px
+		color: #fff		
+		text-decoration: none
+		&:last-child
+			margin-right: 0
+
+@media (max-width: 768px)
+	.main-nav
+		width: 100%
+		margin: 0
+		margin-top: 20px
+		
+		&__item
+			margin: 0
+			display: block
+			text-align: center
+
+
+

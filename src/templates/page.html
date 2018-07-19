@@ -1,0 +1,15 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	<div class="main-content">
+		{% include "partials/_news.html" %}
+		{%include "partials/_videos.html"%}
+	</div>
+
+{% endblock %}

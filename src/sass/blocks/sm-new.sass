@@ -1,0 +1,93 @@
+.sm-new
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-flex-direction: column
+	-moz-flex-direction: column
+	-ms-flex-direction: column
+	-o-flex-direction: column
+	flex-direction: column
+	-ms-align-items: center
+	align-items: center
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	padding: 15px
+	background-color: #fff
+	border-radius: 4px
+	border-right: 1px solid #D4D4D4
+	border-bottom: 1px solid #D4D4D4
+	box-shadow: 1px 1px 0px 0px rgba(229,229,229,1)
+	&__img
+		margin-bottom: 15px
+	&__link
+		color: #042B38
+		font-size: 12px
+		line-height: 18px
+		&:hover
+			text-decoration: none
+			color: $accent
+	&__description
+		color: $italic-text
+		font-size: 11px
+		line-height: 18px
+		font-style: italic
+	&__show
+		width: 35px
+		height: 35px
+		border-radius: 2px
+		background:url(../img/play.png) 10px 8px, linear-gradient(to top, #1B1B1B, #2A2A2A) 
+		background-repeat: no-repeat
+		position: absolute
+		left: 10px
+		top: 125px
+		&:hover
+			background:url(../img/play.png) 10px 8px, $accent
+			background-repeat: no-repeat
+	&--video
+		background-color: transparent
+		padding: 0
+		border: none
+		box-shadow: none
+		position: relative
+
+.sm-news-wrapper
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr
+	grid-column-gap: 10px
+.comments
+	-ms-align-self: flex-end
+	align-self: flex-end
+	font-size: 11px
+	color: $italic-text
+	font-style: italic
+	position: relative
+	text-decoration: none
+	margin-top: auto
+	padding-left: 20px
+	&:hover
+		color: $accent
+	&:before
+		content: ""
+		height: 15px
+		width: 20px
+		background-image: url(../img/comment.png)
+		background-repeat: no-repeat
+		position: absolute
+		left: 0px
+@media (max-width: 960px)
+	.sm-new
+		&__show
+			left: 0
+			top: 0
+@media (max-width: 768px)
+	.sm-news-wrapper
+		grid-template-columns: 1fr
+		margin-bottom: 0
+	.sm-new
+		margin-bottom: 15px
+		&:last-child
+			margin-bottom: 0
+

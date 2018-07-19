@@ -1,0 +1,38 @@
+.main-header
+	position: relative
+	min-height: 130px
+	background-image: url(../img/flag.png)
+	background-color: #07313F
+	padding: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	box-sizing: border-box
+.logo
+	display: inline-block
+.show-nav
+	position: absolute
+	right: 20px
+	top: 20px
+	display: none
+	text-transform: uppercase
+	font-family: "BarlowCondensed"
+	color: #fff
+	background-color: transparent
+	border: none
+	font-size: 18px
+	cursor: pointer
+@media (max-width: 768px)
+	.visually-hidden-mobile
+		display: none
+	.main-header
+		-webkit-flex-direction: column
+		-moz-flex-direction: column
+		-ms-flex-direction: column
+		-o-flex-direction: column
+		flex-direction: column
+		align-items: center
+	.show-nav
+		display: block
